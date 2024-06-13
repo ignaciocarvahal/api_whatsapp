@@ -1,0 +1,6 @@
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+
+
+curl -X POST "http://127.0.0.1:8000/send_whatsapp" -F "phone_number=+56988876774" -F "message=Hola, este es un mensaje de prueba" -F "image=@C:\Users\Usuario\Desktop\api_whatsapp\imagen.png"
